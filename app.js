@@ -21,9 +21,5 @@ app.use(cookieParser());
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/equation", mathGameRouter);
 
-app.use("*", (req, res, next) => {
-  next(new AppError("This route is not defined yet", 404));
-});
-
 app.use(globalErrorHandler);
 module.exports = app;
