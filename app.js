@@ -11,7 +11,7 @@ app.use(express.json());
 // MIDDLEWARES
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://gamehub-theta.vercel.app/",
     credentials: true,
   })
 );
