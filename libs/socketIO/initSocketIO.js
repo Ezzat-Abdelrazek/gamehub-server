@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 exports.initSocketIO = function (server) {
   const io = new Server(server, {
     cors: {
-      origin: "https://gamehub-theta.vercel.app/",
+      origin: ["https://gamehub-theta.vercel.app", "https://gamehub-git-main-ezzat-abdelrazek.vercel.app", "https://majestic-churros-1a7e73.netlify.app"],
     },
   });
 
