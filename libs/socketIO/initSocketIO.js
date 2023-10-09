@@ -23,7 +23,7 @@ exports.initSocketIO = function (server) {
 
       socket.on("game-over", async ({ equationId, answer, userId }) => {
         const res = await fetch(
-          `http://localhost:3000/api/v1/equation/confirm/${equationId}`,
+          `https://gamehub-ybh2.onrender.com/api/v1/equation/confirm/${equationId}`,
           {
             method: "POST",
             headers: {
