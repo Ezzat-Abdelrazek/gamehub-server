@@ -11,7 +11,7 @@ app.use(express.json());
 // MIDDLEWARES
 app.use(
   cors({
-    origin: "gamehub-theta.vercel.app",
+    origin: ["gamehub-theta.vercel.app", "https://gamehub-git-main-ezzat-abdelrazek.vercel.app/"],
     credentials: true,
   })
 );
