@@ -11,7 +11,7 @@ app.use(express.json());
 // MIDDLEWARES
 app.use(
   cors({
-    origin: ["https://gamehub-theta.vercel.app/", "https://gamehub-git-main-ezzat-abdelrazek.vercel.app/"],
+    origin: ["https://gamehub-theta.vercel.app/", "https://gamehub-git-main-ezzat-abdelrazek.vercel.app/", "https://majestic-churros-1a7e73.netlify.app/games/quick-math"],
     credentials: true,
   })
 );
