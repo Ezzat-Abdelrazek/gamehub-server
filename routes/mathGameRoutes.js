@@ -6,7 +6,7 @@ const {
 } = require("../controllers/mathGameControllers");
 
 const router = express.Router();
-router.route("/").get(protect, getRandomEquation);
+router.route("/").get(getRandomEquation);
 router.route("/confirm/:id").post(confirmAnswer);
 
 module.exports = router;
